@@ -1,0 +1,7 @@
+nest generate module "nome-do-modulo" (criar module dentro de uma pasta e registra no app.module)
+nest generate resource "nome-do-modulo" (cria todas as instancias)
+docker run \
+  --rm \ - apaga a imagem depois de executar
+  --name studiesnestjs \ - nome da imagem
+  -p 3000:3000 \ - porta do host:porta do container
+  studiesnestjs - nome da imagem
