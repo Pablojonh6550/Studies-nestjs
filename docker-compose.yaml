@@ -2,11 +2,9 @@ version: '3'
 
 services:
   db:
-    image: mysql:8.0.3
+    image: mysql:8.0.30-debian
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: nest
-      MYSQL_USER: root
-      MYSQL_PASSWORD:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=nest
